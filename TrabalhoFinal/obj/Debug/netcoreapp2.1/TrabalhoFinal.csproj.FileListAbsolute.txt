@@ -1,0 +1,3 @@
+D:\Vinicius\Documentos\Final\TrabalhoFinal\TrabalhoFinal\obj\Debug\netcoreapp2.1\TrabalhoFinal.csproj.CoreCompileInputs.cache
+D:\Vinicius\Documentos\Final\TrabalhoFinal\TrabalhoFinal\obj\Debug\netcoreapp2.1\TrabalhoFinal.AssemblyInfoInputs.cache
+D:\Vinicius\Documentos\Final\TrabalhoFinal\TrabalhoFinal\obj\Debug\netcoreapp2.1\TrabalhoFinal.AssemblyInfo.cs
