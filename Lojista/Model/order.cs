@@ -10,8 +10,10 @@ namespace Lojista.Model
 
         public int ID { get; set;  }
 
+        public int IDSolicitation { get; set; }
+
         public Solicitation Solicitation { get; set; }
 
-        public string Status { get; set; }
+        public int Status { get; set; }
     }
 }

@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DataFake\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

@@ -14,6 +14,7 @@ namespace Lojista.Model
 
         public DateTime DateReceive { get; set; }
 
+        public int IDSolicitation { get; set; }
         public Solicitation Solicitation { get; set; }
     }
 }
