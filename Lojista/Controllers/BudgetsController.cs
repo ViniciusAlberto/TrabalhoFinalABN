@@ -8,7 +8,7 @@ namespace Lojista.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PedidosController : ControllerBase
+    public class BudgetsController : ControllerBase
     {
         // GET api/values
         [HttpGet]

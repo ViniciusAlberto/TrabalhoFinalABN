@@ -4,11 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Fornecedor.Controllers
+namespace Lojista.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class BudgetsController : ControllerBase
     {
         // GET api/values
         [HttpGet]
