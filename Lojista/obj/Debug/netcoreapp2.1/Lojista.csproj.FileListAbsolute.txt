@@ -6,7 +6,6 @@ D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista\bin\Debug\netcoreapp2.1\Lojis
 D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista\bin\Debug\netcoreapp2.1\Lojista.runtimeconfig.dev.json
 D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista\bin\Debug\netcoreapp2.1\Lojista.dll
 D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista\bin\Debug\netcoreapp2.1\Lojista.pdb
-D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista\obj\Debug\netcoreapp2.1\Lojista.csprojAssemblyReference.cache
 D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista\obj\Debug\netcoreapp2.1\Lojista.RazorAssemblyInfo.cache
 D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista\obj\Debug\netcoreapp2.1\Lojista.RazorAssemblyInfo.cs
 D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
