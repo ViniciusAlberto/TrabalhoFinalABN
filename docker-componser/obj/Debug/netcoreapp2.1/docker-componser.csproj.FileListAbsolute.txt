@@ -1,3 +1,0 @@
-D:\Vinicius\Documentos\Final\TrabalhoFinal\docker-componser\obj\Debug\netcoreapp2.1\docker-componser.csproj.CoreCompileInputs.cache
-D:\Vinicius\Documentos\Final\TrabalhoFinal\docker-componser\obj\Debug\netcoreapp2.1\docker-componser.AssemblyInfoInputs.cache
-D:\Vinicius\Documentos\Final\TrabalhoFinal\docker-componser\obj\Debug\netcoreapp2.1\docker-componser.AssemblyInfo.cs
