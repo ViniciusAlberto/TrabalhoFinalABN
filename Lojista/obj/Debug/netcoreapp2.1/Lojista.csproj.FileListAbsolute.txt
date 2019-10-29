@@ -1,14 +1,14 @@
-D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista\obj\Debug\netcoreapp2.1\Lojista.csproj.CoreCompileInputs.cache
-D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista\obj\Debug\netcoreapp2.1\Lojista.AssemblyInfoInputs.cache
-D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista\obj\Debug\netcoreapp2.1\Lojista.AssemblyInfo.cs
 D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista\bin\Debug\netcoreapp2.1\Lojista.deps.json
 D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista\bin\Debug\netcoreapp2.1\Lojista.runtimeconfig.json
 D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista\bin\Debug\netcoreapp2.1\Lojista.runtimeconfig.dev.json
 D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista\bin\Debug\netcoreapp2.1\Lojista.dll
 D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista\bin\Debug\netcoreapp2.1\Lojista.pdb
+D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista\obj\Debug\netcoreapp2.1\Lojista.csproj.CoreCompileInputs.cache
 D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista\obj\Debug\netcoreapp2.1\Lojista.RazorAssemblyInfo.cache
 D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista\obj\Debug\netcoreapp2.1\Lojista.RazorAssemblyInfo.cs
 D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista\obj\Debug\netcoreapp2.1\Lojista.AssemblyInfoInputs.cache
+D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista\obj\Debug\netcoreapp2.1\Lojista.AssemblyInfo.cs
 D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista\obj\Debug\netcoreapp2.1\Lojista.RazorTargetAssemblyInfo.cache
 D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista\obj\Debug\netcoreapp2.1\Lojista.dll
 D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista\obj\Debug\netcoreapp2.1\Lojista.pdb

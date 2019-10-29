@@ -1,0 +1,32 @@
+services:
+  fornecedor:
+    build:
+      context: D:\Vinicius\Documentos\Final\TrabalhoFinal
+      dockerfile: Fornecedor/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: fornecedor
+    ports:
+    - published: 5556
+      target: 80
+  gateway:
+    build:
+      context: D:\Vinicius\Documentos\Final\TrabalhoFinal
+      dockerfile: Gateway/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: gateway
+    ports:
+    - published: 5555
+      target: 80
+  lojista:
+    build:
+      context: D:\Vinicius\Documentos\Final\TrabalhoFinal
+      dockerfile: Lojista/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: lojista
+    ports:
+    - published: 5557
+      target: 80
+version: '3.4'

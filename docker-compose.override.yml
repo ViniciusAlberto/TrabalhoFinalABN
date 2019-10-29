@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  gateway:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "5555:80"
+
+  fornecedor:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "5556:80"
+
+
+  lojista:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "5557:80"

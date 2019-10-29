@@ -1,0 +1,95 @@
+services:
+  fornecedor:
+    build:
+      context: D:\Vinicius\Documentos\Final\TrabalhoFinal
+      dockerfile: Fornecedor/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Fornecedor
+      target: base
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: fornecedor:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "bin/Debug/netcoreapp2.1/Fornecedor.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 5556
+      target: 80
+    volumes:
+    - D:\Vinicius\Documentos\Final\TrabalhoFinal\Fornecedor:/app:rw
+    - C:\Users\Vinicius Oliveira\vsdbg\vs2017u5:/remote_debugger:ro
+    - C:\Users\Vinicius Oliveira\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Vinicius Oliveira\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+    - C:\Users\Vinicius Oliveira\.nuget\packages:/root/.nuget/packages:ro
+  gateway:
+    build:
+      context: D:\Vinicius\Documentos\Final\TrabalhoFinal
+      dockerfile: Gateway/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Gateway
+      target: base
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: gateway:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "bin/Debug/netcoreapp2.1/Gateway.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 5555
+      target: 80
+    volumes:
+    - D:\Vinicius\Documentos\Final\TrabalhoFinal\Gateway:/app:rw
+    - C:\Users\Vinicius Oliveira\vsdbg\vs2017u5:/remote_debugger:ro
+    - C:\Users\Vinicius Oliveira\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Vinicius Oliveira\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+    - C:\Users\Vinicius Oliveira\.nuget\packages:/root/.nuget/packages:ro
+  lojista:
+    build:
+      context: D:\Vinicius\Documentos\Final\TrabalhoFinal
+      dockerfile: Lojista/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Lojista
+      target: base
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: lojista:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "bin/Debug/netcoreapp2.1/Lojista.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 5557
+      target: 80
+    volumes:
+    - D:\Vinicius\Documentos\Final\TrabalhoFinal\Lojista:/app:rw
+    - C:\Users\Vinicius Oliveira\vsdbg\vs2017u5:/remote_debugger:ro
+    - C:\Users\Vinicius Oliveira\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Vinicius Oliveira\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+    - C:\Users\Vinicius Oliveira\.nuget\packages:/root/.nuget/packages:ro
+version: '3.4'

@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  gateway:
+    image: ${DOCKER_REGISTRY}gateway
+    build:
+      context: .
+      dockerfile: Gateway/Dockerfile
+
+  fornecedor:
+    image: ${DOCKER_REGISTRY}fornecedor
+    build:
+      context: .
+      dockerfile: Fornecedor/Dockerfile
+
+
+  lojista:
+    image: ${DOCKER_REGISTRY}lojista
+    build:
+      context: .
+      dockerfile: Lojista/Dockerfile
+

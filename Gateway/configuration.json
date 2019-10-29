@@ -1,38 +1,51 @@
 {
-
-}
-{
   "ReRoutes": [
     {
       "DownstreamPathTemplate": "/",
       "DownstreamScheme": "http",
-      "DownstreamPort": 80,
-      "DownstreamHost": "pedido",
-      "UpstreamPathTemplate": "/pedido/",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "lojista",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/lojista/",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ]
     },
     {
       "DownstreamPathTemplate": "/{everything}",
       "DownstreamScheme": "http",
-      "DownstreamPort": 80,
-      "DownstreamHost": "pedido",
-      "UpstreamPathTemplate": "/pedido/{everything}",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "lojista",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/lojista/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ]
     },
     {
       "DownstreamPathTemplate": "/",
       "DownstreamScheme": "http",
-      "DownstreamPort": 80,
-      "DownstreamHost": "estoque",
-      "UpstreamPathTemplate": "/estoque/",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "fornecedor",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/fornecedor/",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ]
     },
     {
       "DownstreamPathTemplate": "/{everything}",
       "DownstreamScheme": "http",
-      "DownstreamPort": 80,
-      "DownstreamHost": "estoque",
-      "UpstreamPathTemplate": "/estoque/{everything}",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "fornecedor",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/fornecedor/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ]
     }
   ],
