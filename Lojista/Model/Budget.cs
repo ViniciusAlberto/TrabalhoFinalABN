@@ -13,8 +13,9 @@ namespace Lojista.Model
         public double Price { get; set; }
 
         public DateTime DateReceive { get; set; }
-
         public int IDSolicitation { get; set; }
+
+        public bool? Status { get; set; }
         public Solicitation Solicitation { get; set; }
     }
 }

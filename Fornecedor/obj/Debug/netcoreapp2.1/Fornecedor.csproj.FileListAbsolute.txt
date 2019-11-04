@@ -12,3 +12,4 @@ D:\Vinicius\Documentos\Final\TrabalhoFinal\Fornecedor\obj\Debug\netcoreapp2.1\Fo
 D:\Vinicius\Documentos\Final\TrabalhoFinal\Fornecedor\obj\Debug\netcoreapp2.1\Fornecedor.RazorTargetAssemblyInfo.cache
 D:\Vinicius\Documentos\Final\TrabalhoFinal\Fornecedor\obj\Debug\netcoreapp2.1\Fornecedor.dll
 D:\Vinicius\Documentos\Final\TrabalhoFinal\Fornecedor\obj\Debug\netcoreapp2.1\Fornecedor.pdb
+D:\Vinicius\Documentos\Final\TrabalhoFinal\Fornecedor\obj\Debug\netcoreapp2.1\Fornecedor.csprojAssemblyReference.cache

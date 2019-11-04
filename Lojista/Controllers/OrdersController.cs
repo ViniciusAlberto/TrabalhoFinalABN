@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Lojista.DataFake;
+using Lojista.Model;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Lojista.Controllers
@@ -11,35 +13,17 @@ namespace Lojista.Controllers
     public class OrdersController : ControllerBase
     {
         // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        [ProducesResponseType(typeof(IEnumerable<Order>), 200)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(500)]
+        public ActionResult<Order> Get(int id)
         {
-            return "value";
+            return DataFake.DataFake.Orders().Where(x => x.ID ==id).FirstOrDefault();
         }
 
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
 
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
     }
 }

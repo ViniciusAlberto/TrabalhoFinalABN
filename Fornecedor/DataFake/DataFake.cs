@@ -165,7 +165,7 @@ namespace Lojista.DataFake
             return new List<Budget>() { budget1, budget2, budget3, budget4, budget5 };
         }
 
-        public List<Order>Orders()
+        public static List<Order>Orders()
         {
 
             var order1 = new Order()

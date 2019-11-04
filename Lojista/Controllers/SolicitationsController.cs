@@ -14,6 +14,9 @@ namespace Lojista.Controllers
     {
         // GET api/values
         [HttpGet]
+        [ProducesResponseType(typeof(IEnumerable<Solicitation>), 200)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(500)]
         public ActionResult<IEnumerable<Solicitation>> Get()
         {
             return DataFake.DataFake.Solicitations();
@@ -21,6 +24,9 @@ namespace Lojista.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
+        [ProducesResponseType(typeof(Solicitation), 200)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(500)]
         public ActionResult<Solicitation> Get(int id)
         {
             return DataFake.DataFake.Solicitations().Where(x => x.ID == id).FirstOrDefault(); 
@@ -28,21 +34,32 @@ namespace Lojista.Controllers
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody] string value)
+        [ProducesResponseType(typeof(Solicitation), 200)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(500)]
+        public void Post([FromBody] Solicitation solicitation)
         {
 
         }
 
         // PUT api/values/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [ProducesResponseType(typeof(Solicitation), 200)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(500)]
+        public void Put(int id, [FromBody] Solicitation solicitation)
         {
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
+        [ProducesResponseType(typeof(Solicitation), 200)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(500)]
         public void Delete(int id)
         {
+
+           
         }
 
     }

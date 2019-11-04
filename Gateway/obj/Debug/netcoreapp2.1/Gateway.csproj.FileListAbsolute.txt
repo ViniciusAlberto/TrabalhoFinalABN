@@ -12,3 +12,4 @@ D:\Vinicius\Documentos\Final\TrabalhoFinal\Gateway\obj\Debug\netcoreapp2.1\Gatew
 D:\Vinicius\Documentos\Final\TrabalhoFinal\Gateway\obj\Debug\netcoreapp2.1\Gateway.RazorTargetAssemblyInfo.cache
 D:\Vinicius\Documentos\Final\TrabalhoFinal\Gateway\obj\Debug\netcoreapp2.1\Gateway.dll
 D:\Vinicius\Documentos\Final\TrabalhoFinal\Gateway\obj\Debug\netcoreapp2.1\Gateway.pdb
+D:\Vinicius\Documentos\Final\TrabalhoFinal\Gateway\obj\Debug\netcoreapp2.1\Gateway.csprojAssemblyReference.cache
