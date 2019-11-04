@@ -21,7 +21,15 @@ namespace Lojista.Controllers
         [ProducesResponseType(500)]
         public ActionResult<Order> Get(int id)
         {
-            return DataFake.DataFake.Orders().Where(x => x.ID ==id).FirstOrDefault();
+            try
+            {
+                return DataFake.DataFake.Orders().Where(x => x.ID == id).First();
+            }
+             catch(Exception e)
+            {
+                return NotFound("Não encontrado!!");
+
+            }
         }
 
 

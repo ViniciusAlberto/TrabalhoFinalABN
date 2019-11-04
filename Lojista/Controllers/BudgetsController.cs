@@ -23,7 +23,14 @@ namespace Lojista.Controllers
         [ProducesResponseType(500)]
         public ActionResult<Budget> Get(int id)
         {
-            return DataFake.DataFake.Budgets().Where(x => x.ID == id).FirstOrDefault();
+            try
+            {
+                return DataFake.DataFake.Budgets().Where(x => x.ID == id).First();
+            }
+            catch(Exception e)
+            {
+                return NotFound("Não encontrado!!");
+            }
         }
 
         // POST api/values
@@ -34,7 +41,8 @@ namespace Lojista.Controllers
         [ProducesResponseType(500)]
         public ActionResult<Budget> Reject([FromRoute] int id) {
 
-            var budget =  DataFake.DataFake.Budgets().Where(x => x.ID == id).FirstOrDefault();
+          
+            var budget =  DataFake.DataFake.Budgets().Where(x => x.ID == id).First();
 
             if (budget != null)
             {
@@ -42,7 +50,12 @@ namespace Lojista.Controllers
 
                 return budget;
             }
-            return null;
+            else
+            {        
+                return NotFound("Não encontrado!!");
+            
+            }
+          
         }
 
 
@@ -53,7 +66,7 @@ namespace Lojista.Controllers
         public ActionResult<Budget> Approved([FromRoute] int id)
         {
 
-            var budget = DataFake.DataFake.Budgets().Where(x => x.ID == id).FirstOrDefault();
+            var budget = DataFake.DataFake.Budgets().Where(x => x.ID == id).First();
 
             if (budget != null)
             {
@@ -61,7 +74,11 @@ namespace Lojista.Controllers
 
                 return budget;
             }
-            return null;
+            else
+            {
+                return NotFound("Não encontrado!!");
+
+            }
 
         }
     }

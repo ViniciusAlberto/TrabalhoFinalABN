@@ -19,8 +19,17 @@ namespace Lojista.Controllers
         [ProducesResponseType(500)]
         public ActionResult<IEnumerable<Solicitation>> Get()
         {
-            return DataFake.DataFake.Solicitations();
-        }
+            try
+            {
+                return DataFake.DataFake.Solicitations();
+            }
+
+            catch (Exception e)
+            {
+                return NotFound("Não encontrado!!");
+
+            }
+}
 
         // GET api/values/5
         [HttpGet("{id}")]
@@ -29,7 +38,14 @@ namespace Lojista.Controllers
         [ProducesResponseType(500)]
         public ActionResult<Solicitation> Get(int id)
         {
-            return DataFake.DataFake.Solicitations().Where(x => x.ID == id).FirstOrDefault(); 
+            try { 
+            return DataFake.DataFake.Solicitations().Where(x => x.ID == id).First();
+            }
+            catch (Exception e)
+            {
+                return NotFound("Não encontrado!!");
+
+            }
         }
 
         // POST api/values

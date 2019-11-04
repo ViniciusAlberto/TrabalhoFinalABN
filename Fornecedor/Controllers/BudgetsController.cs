@@ -18,7 +18,16 @@ namespace Lojista.Controllers
         [ProducesResponseType(500)]
         public ActionResult<IEnumerable<Budget>> Get()
         {
-            return DataFake.DataFake.Budgets().ToList();
+            try
+            {
+                return DataFake.DataFake.Budgets().ToList();
+            }
+            catch (Exception e)
+            {
+                return NotFound("Não encontrado!!");
+
+            }
+
         }
 
         // GET api/values/5
@@ -28,7 +37,14 @@ namespace Lojista.Controllers
         [ProducesResponseType(500)]
         public ActionResult<Budget> Get(int id)
         {
-            return DataFake.DataFake.Budgets().Where(x => x.ID == id).FirstOrDefault();
+            try { 
+            return DataFake.DataFake.Budgets().Where(x => x.ID == id).First();
+            }
+            catch (Exception e)
+            {
+                return NotFound("Não encontrado!!");
+
+            }
         }
 
         // POST api/values
